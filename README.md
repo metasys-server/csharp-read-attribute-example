@@ -45,3 +45,17 @@ Now you can run the app
 Value 1: 72.5
 Value 2: 18.23
 ```
+
+## Publishing as Single File
+
+For Windows/Release (for Debug, drop the -c switch)
+
+```bash
+dotnet publish -r win-x64 -p:PublishSingleFile=True --self-contained -c Release
+```
+
+For macOS/Release (for Debug, drop the -c switch)
+
+```bash
+dotnet publish -r osx-x64 -p:PublishSingleFile=True --self-contained -c Release
+```
